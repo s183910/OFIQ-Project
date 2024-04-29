@@ -2,6 +2,6 @@
 # install_x86_64_linux/Release/bin/
 # # build/build_linux/*
 # # build/*
-# data/*
+data/tests/images/*
 # # extern/*
 # # install_x86_64_linux/*
