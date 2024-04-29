@@ -3,5 +3,5 @@ install_x86_64_linux/Release/bin/
 build/build_linux/*
 build/*
 data/*
-extern/*
+# extern/*
 install_x86_64_linux/*
