@@ -1,2 +1,3 @@
 OFIQ-Project/data/tests/images/*
 *.csv
+/data/tests/images
