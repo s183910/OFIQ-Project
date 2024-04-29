@@ -69,7 +69,7 @@ namespace OFIQ_LIB::modules::landmarks
         {
             m_ort_session = std::make_unique<Ort::Session>(
                 m_ortenv,
-                i_model_data.data(), 
+                i_model_data.data(),
                 i_model_data.size(),
                 Ort::SessionOptions{nullptr});
 
@@ -281,7 +281,7 @@ namespace OFIQ_LIB::modules::landmarks
             std::string err_msg = "no face found on given image: " + std::string(e.what());
             throw OFIQError(ReturnCode::FaceDetectionError, err_msg);
         }
-        
+
         if (faceRects.empty())
         {
             return landmarks;
@@ -297,7 +297,7 @@ namespace OFIQ_LIB::modules::landmarks
             // SSD bounding box does not have to be quadratic -> check and make it square
             cv::Mat cvImage_maybe_padded;
             OFIQ::BoundingBox detectedFaceSquare;
-            
+
             OFIQ_LIB::makeSquareBoundingBoxWithPadding(
                 detectedFace,
                 cvImage,
@@ -346,9 +346,9 @@ namespace OFIQ_LIB::modules::landmarks
 #ifdef OFIQ_SINGLE_FACE_PRESENT_WITH_TMETRIC
 #pragma message ("WARNING: This is needed for SingleFacePresent measure based on T-metric which is slow. This should be removed after adjustment of 29794-5 standard.")
 // TODO: If 29794-5 is adujusted as suggested, then remove all code
-//     within OFIQ_SINGLE_FACE_PRESENT_WITH_TMETRIC and keep 
+//     within OFIQ_SINGLE_FACE_PRESENT_WITH_TMETRIC and keep
 //     alternative variant within #else block.
-    
+
     // protected override
     std::vector<OFIQ::FaceLandmarks> ADNetFaceLandmarkExtractor::updateLandmarksAllFaces
     (OFIQ_LIB::Session& session, const std::vector<OFIQ::BoundingBox>& faces)
@@ -389,7 +389,7 @@ namespace OFIQ_LIB::modules::landmarks
                 detectedFace.height); // (x, y, width, height)
 
             // Crop the image using the ROI
-            cv::Mat croppedImage = cvImage(roi);
+            cv::Mat croppedImage = cvImage(roi).clone();
 
             std::vector<float> landmarks_from_net = landmarkExtractor->extractLandMarks(croppedImage);
             float scalingFactor = detectedFace.height / 256.0f;
@@ -411,7 +411,7 @@ namespace OFIQ_LIB::modules::landmarks
             landmarks.type = LandmarkType::LM_98;
             landmarksList.push_back(landmarks);
         }
-    
+
         return landmarksList;
     }
 #endif
