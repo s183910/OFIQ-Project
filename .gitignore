@@ -1,6 +1,6 @@
 data/tests/images/
 install_x86_64_linux/Release/bin/
-build/build_linux/*
+# build/build_linux/*
 # build/*
 data/*
 # extern/*

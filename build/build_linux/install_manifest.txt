@@ -1,0 +1,9 @@
+/mnt/c/Dokumenter/Dokumenter/UNI/Master/Thesis/GitHub_Repo/OFIQ-Project/install_x86_64_linux/Release/bin/libonnxruntime.so.1.14.1
+/mnt/c/Dokumenter/Dokumenter/UNI/Master/Thesis/GitHub_Repo/OFIQ-Project/install_x86_64_linux/Release/lib/libonnxruntime.so.1.14.1
+/mnt/c/Dokumenter/Dokumenter/UNI/Master/Thesis/GitHub_Repo/OFIQ-Project/install_x86_64_linux/Release/bin/OFIQSampleApp
+/mnt/c/Dokumenter/Dokumenter/UNI/Master/Thesis/GitHub_Repo/OFIQ-Project/install_x86_64_linux/Release/lib/libofiq_lib.so
+/mnt/c/Dokumenter/Dokumenter/UNI/Master/Thesis/GitHub_Repo/OFIQ-Project/install_x86_64_linux/include/ofiq_lib.h
+/mnt/c/Dokumenter/Dokumenter/UNI/Master/Thesis/GitHub_Repo/OFIQ-Project/install_x86_64_linux/include/ofiq_structs.h
+/mnt/c/Dokumenter/Dokumenter/UNI/Master/Thesis/GitHub_Repo/OFIQ-Project/install_x86_64_linux/Release/bin/libofiq_lib.so
+/mnt/c/Dokumenter/Dokumenter/UNI/Master/Thesis/GitHub_Repo/OFIQ-Project/install_x86_64_linux/include/ofiq_lib.h
+/mnt/c/Dokumenter/Dokumenter/UNI/Master/Thesis/GitHub_Repo/OFIQ-Project/install_x86_64_linux/include/ofiq_structs.h
