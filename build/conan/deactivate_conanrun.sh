@@ -1,0 +1,1 @@
+. "/mnt/c/Dokumenter/Dokumenter/UNI/Master/Thesis/GitHub_Repo/OFIQ-Project/build/conan/deactivate_conanrunenv-release-x86_64.sh"
